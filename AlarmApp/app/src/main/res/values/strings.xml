@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AlarmApp</string>
+    <string name="monday">M</string>
+    <string name="tuesday">T</string>
+    <string name="wednesday">W</string>
+    <string name="thursday">Th</string>
+    <string name="friday">F</string>
+    <string name="saturday">Sa</string>
+    <string name="sunday">S</string>
+    <string name="text_sound">Sound</string>
+    <string name="default_ring" />
+    <string name="text_name">Name</string>
+    <string name="default_name">Alarm</string>
+    <string name="text_vibrate">Vibrate</string>
+    <string name="text_snooze_time">Snooze time</string>
+    <string name="text_use_24_format">Use 24-hour format</string>
+    <string name="text_default_sound">Defaut sound</string>
+    <string name="text_default_snooze_time">Defaut snooze time</string>
+    <string name="text_dismiss">Dismiss</string>
+    <string name="text_snooze">SNOOZE</string>
+</resources>
