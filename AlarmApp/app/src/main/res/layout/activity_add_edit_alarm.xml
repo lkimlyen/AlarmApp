@@ -99,10 +99,11 @@
                     android:textSize="16sp" />
 
                 <TimePicker
-                    android:id="@+id/time_picker"
+                    android:id="@+id/tp_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:timePickerMode="spinner"
                     android:layout_marginBottom="2dp"
                     android:layout_marginTop="2dp" />
             </LinearLayout>
@@ -124,64 +125,64 @@
                     <LinearLayout style="@style/new_alarm_clock_repeat_days_llyt">
 
                         <ToggleButton
-                            android:id="@+id/tog_btn_monday"
+                            android:id="@+id/tb_monday"
                             style="@style/new_alarm_clcok_repeat_days_tog_btn"
                             android:textOff="@string/monday"
-                            android:textOn="@string/monday"/>
+                            android:textOn="@string/monday" />
                     </LinearLayout>
 
                     <LinearLayout style="@style/new_alarm_clock_repeat_days_llyt">
 
                         <ToggleButton
-                            android:id="@+id/tog_btn_tuesday"
+                            android:id="@+id/tb_tuesday"
                             style="@style/new_alarm_clcok_repeat_days_tog_btn"
                             android:textOff="@string/tuesday"
-                            android:textOn="@string/tuesday"/>
+                            android:textOn="@string/tuesday" />
                     </LinearLayout>
 
                     <LinearLayout style="@style/new_alarm_clock_repeat_days_llyt">
 
                         <ToggleButton
-                            android:id="@+id/tog_btn_wednesday"
+                            android:id="@+id/tb_wednesday"
                             style="@style/new_alarm_clcok_repeat_days_tog_btn"
                             android:textOff="@string/wednesday"
-                            android:textOn="@string/wednesday"/>
+                            android:textOn="@string/wednesday" />
                     </LinearLayout>
 
                     <LinearLayout style="@style/new_alarm_clock_repeat_days_llyt">
 
                         <ToggleButton
-                            android:id="@+id/tog_btn_thursday"
+                            android:id="@+id/tb_thursday"
                             style="@style/new_alarm_clcok_repeat_days_tog_btn"
                             android:textOff="@string/thursday"
-                            android:textOn="@string/thursday"/>
+                            android:textOn="@string/thursday" />
                     </LinearLayout>
 
                     <LinearLayout style="@style/new_alarm_clock_repeat_days_llyt">
 
                         <ToggleButton
-                            android:id="@+id/tog_btn_friday"
+                            android:id="@+id/tb_friday"
                             style="@style/new_alarm_clcok_repeat_days_tog_btn"
                             android:textOff="@string/friday"
-                            android:textOn="@string/friday"/>
+                            android:textOn="@string/friday" />
                     </LinearLayout>
 
                     <LinearLayout style="@style/new_alarm_clock_repeat_days_llyt">
 
                         <ToggleButton
-                            android:id="@+id/tog_btn_saturday"
+                            android:id="@+id/tb_saturday"
                             style="@style/new_alarm_clcok_repeat_days_tog_btn"
                             android:textOff="@string/saturday"
-                            android:textOn="@string/saturday"/>
+                            android:textOn="@string/saturday" />
                     </LinearLayout>
 
                     <LinearLayout style="@style/new_alarm_clock_repeat_days_llyt">
 
                         <ToggleButton
-                            android:id="@+id/tog_btn_sunday"
+                            android:id="@+id/tb_sunday"
                             style="@style/new_alarm_clcok_repeat_days_tog_btn"
                             android:textOff="@string/sunday"
-                            android:textOn="@string/sunday"/>
+                            android:textOn="@string/sunday" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -232,7 +233,7 @@
                         android:text="@string/text_sound" />
 
                     <TextView
-                        android:id="@+id/ring_describe"
+                        android:id="@+id/txt_ring_name"
                         style="@style/new_alarm_clcok_item_describe"
                         android:layout_marginRight="6dp"
                         android:drawablePadding="5dp"
@@ -242,9 +243,32 @@
                         android:singleLine="true"
                         android:text="@string/default_ring" />
                 </LinearLayout>
-
-
                 <View style="@style/divider_line" />
+
+                <LinearLayout
+                    style="@style/new_alarm_clcok_item"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/bg_record_operate_item">
+
+                    <TextView
+                        style="@style/new_alarm_clcok_item_type"
+                        android:layout_marginLeft="6dp"
+                        android:text="@string/text_snooze_time" />
+
+                    <TextView
+                        android:id="@+id/tv_snooze_time"
+                        style="@style/new_alarm_clcok_item_describe"
+                        android:layout_marginRight="6dp"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/ic_more_arrow_dark"
+                        android:ellipsize="end"
+                        android:maxWidth="230dp"
+                        android:singleLine="true"
+                        android:text="@string/text_defautl_snooze_time" />
+                </LinearLayout>
+
+
 
                 <View style="@style/divider_line" />
 
@@ -254,9 +278,20 @@
                         style="@style/new_alarm_clcok_item_type"
                         android:text="@string/text_vibrate" />
 
+
                     <ToggleButton
-                        android:id="@+id/vibrate_btn"
-                        style="@style/new_alarm_clcok_item_toggle_btn"></ToggleButton>
+                        android:id="@+id/tb_vibrate"
+                        android:layout_width="53dp"
+                        android:layout_height="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/toggle_selector"
+                        android:checked="false"
+                        android:text=""
+                        android:textOff=""
+                        android:textOn="" />
                 </LinearLayout>
 
                 <View style="@style/divider_line" />

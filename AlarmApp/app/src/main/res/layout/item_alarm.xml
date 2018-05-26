@@ -30,6 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tuesday"
+            android:id="@+id/tv_repeat"
             android:textColor="@android:color/black"
             android:textSize="14sp"/>
     </LinearLayout>
@@ -43,7 +44,7 @@
 
 
         <ToggleButton
-            android:id="@+id/toggleButton1"
+            android:id="@+id/tb_turn"
             android:layout_width="53dp"
             android:layout_height="32dp"
             android:layout_centerHorizontal="true"
@@ -59,6 +60,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/ic_menu"
+            android:id="@+id/img_setting"
             android:padding="10dp"/>
     </LinearLayout>
 </LinearLayout>

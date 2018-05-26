@@ -1,5 +1,6 @@
 package com.demo.alarm.app.yenyen;
 
+import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -15,11 +16,15 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
+
+     private final String TAG = MainActivity.class.getName();
+    private static final int REQUEST_RING_SELECT = 1;
     @BindView(R.id.viewpager)
     ViewPager viewPager;
 
     @BindView(R.id.tabs)
     TabLayout tabLayout;
+
     SettingFragment settingFragment;
     AlarmFragment alarmFragment;
 

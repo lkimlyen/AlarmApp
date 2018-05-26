@@ -18,4 +18,9 @@
     <string name="text_default_snooze_time">Defaut snooze time</string>
     <string name="text_dismiss">Dismiss</string>
     <string name="text_snooze">SNOOZE</string>
+    <string name="text_edit">Edit</string>
+    <string name="text_duplicate">Duplicate</string>
+    <string name="text_review">Review</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_defautl_snooze_time">10 minutes</string>
 </resources>
